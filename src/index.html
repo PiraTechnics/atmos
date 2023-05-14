@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Atmos | WHow's the weather out there?</title>
+    <title>Atmos | How's the weather out there?</title>
   </head>
   <body>
     <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, World!</h1>
-      <button class="btn btn-primary">Primary button</button>
+      <form>
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text" id="addon-wrapping">Location</span>
+          <input type="text" id="location" class="form-control" placeholder="Location" aria-label="location" aria-describedby="addon-wrapping" required>
+          <button type="submit" class="btn btn-primary">Get Weather</button>
+      </form>
+      </div>
     </div>
   </body>
 </html>
